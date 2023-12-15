@@ -2,7 +2,7 @@
 """
 Created on Fri Dec 15 15:51:02 2023
 
-@author: HP
+@author: Vasudev 
 """
 
 # -*- coding: utf-8 -*-
@@ -24,7 +24,7 @@ def audio_output(text,lan):
     text_obj.save("temp.mp3")
     return st.audio("temp.mp3")
 
-out = st.radio("",["Text To Speech","PDF To Speech","Developer"],horizontal=True)
+out = st.radio("",["Text To Speech","PDF To Speech"],horizontal=True)
 if out == "Text To Speech":
     list_lang= ["English","Hindi","Marathi","Gujarati","Malayalam","Tamil",
     "Telugu","Kannada","Urdu","Bengali","French","German","Greek","Rassian"]
